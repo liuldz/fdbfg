@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>这是谁啊，笑的这好看</title>
+<li>小仙女</li>
+<style>
+
+	*{margin:0;padding:0;background-color:#BBFFFF;}
+	li{list-style:none;}
+	li{float:left;}
+	i{font-style: normal;}
+	#wrap{
+		width:800px;
+		height:200px;
+		margin:100px auto;
+		overflow:hidden;
+	}
+	#wrap ul{
+		width:1800px;
+		animation:move 10s infinite linear;
+	}
+	@keyframes move{
+		0%{transform:translateX(0px);}
+		100%{transform:translateX(-1200px);}
+	}
+	#wrap ul:hover{
+		animation-play-state:paused;
+	}
+	ul li{
+		float:left;
+		width:200px;
+		height:500px;
+	}
+	ul li img{
+		width:100%;
+		height:100px;
+	}
+	</style>
+	</head>
+	<body>
+	<div id="wrap">
+	<ul>
+		<li><img src="images/1.jpg" alt=""></li>
+	<li><img src="images/2.jpg" alt=""></li>
+	<li><img src="images/3.jpg" alt=""></li>
+	<li><img src="images/4.jpg" alt=""></li>
+	<li><img src="images/1.jpg" alt=""></li>
+	<li><img src="images/2.jpg" alt=""></li>
+	</ul>
+	</div>
+	</body>
+	</html>

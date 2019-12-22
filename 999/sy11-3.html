@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>点点看</title>
+<style>
+	*{margin:0;padding:0;background-color:#6ccff7;}
+	li{list-style:none;}
+	#wrap{position:relative;width:400px;height:500px;border:2px solid #000;margin:auto;background-color:#66ccff;cursor:pointer;}
+	#wrap img{position:absolute;display:none;}
+	#wrap .on{display:block;}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<img id="img1" class="on" src="images/1.jpg" alt="">
+<img id="img2" src="images/2.jpg" alt="">
+</div>
+<script>
+   let oimg1=document.getElementById("img1"),
+   oimg2=document.getElementById("img2");
+   oimg1.onclick=function()
+   {
+	 oimg1.className="";
+	 oimg2.className="on";
+   }
+   oimg2.onclick=function()
+   {
+   oimg2.className="";
+   oimg1.className="on";
+   }
+</script>
+	
+	
+	
+	
+</body>
+</html>
